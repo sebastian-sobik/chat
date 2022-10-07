@@ -1,8 +1,11 @@
-@use './nav';
 @forward './reset';
+@use './messege';
+@use './nav';
+@use './main';
 
 $background-color : #1F1F1F;
 $font-color : white;
+$font : "Inter";
 
 body {
     width: 100vw;
@@ -11,8 +14,13 @@ body {
     justify-content: center;
     background-color: $background-color;
     color: $font-color;
+    font-family: $font, sans-serif;
 }
 
-// .absolute {
-//     position: absolute;
-// }
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}

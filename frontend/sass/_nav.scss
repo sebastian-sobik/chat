@@ -1,6 +1,5 @@
 @use 'mixins' as mx;
 
-$size : 24px;
 
 
 nav {
@@ -9,18 +8,27 @@ nav {
     width: 100%;
     max-width: 1200px;
     height: 60px;
-    padding: 0 30px;
-    border: 1px solid white;
     
-    svg {
-        width: $size;
-        height: $size; 
+    padding: 0 30px;
+
+    .nav-logout {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .nav-theme-btn {
+        cursor: pointer;
+        transition: background-color 100ms linear;
+
+        &:hover {
+            background-color: #686868;
+        }
     }
 }
 
 nav.absolute {
     position: absolute;
-    top: 50%;
+    top: 20px;
 }
 
 .theme-icon-sun {
