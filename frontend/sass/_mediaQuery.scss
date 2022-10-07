@@ -1,0 +1,38 @@
+@media (max-width: 840px)
+{
+
+    .chat-messege:first-child{
+        margin-top:120px;
+    }
+
+    nav {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 420px)
+{
+    nav{
+        background-color: #272727;
+        top:0;
+        padding: 0 30px;
+    }
+
+    .insert {
+        bottom: 30px;
+    }
+
+    .chat {
+        max-width: 85%;
+    }
+
+    .chat-messege ,
+    .messege{
+        max-width: none !important;
+        width: 100%;
+    }
+
+    .chat-messege:last-child {
+            margin-bottom: 150px;
+        }
+}

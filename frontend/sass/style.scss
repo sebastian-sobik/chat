@@ -3,14 +3,19 @@
 @use './nav';
 @use './main';
 @use './insert';
+@use './mediaQuery';
 
 $background-color : #1F1F1F;
 $font-color : white;
 $font : "Inter";
 
+:root {
+    --app-height: 100vh;
+}
+
 body {
     width: 100vw;
-    height: 100vh;
+    height: var(--app-height);
     display: flex;
     justify-content: center;
     background-color: $background-color;

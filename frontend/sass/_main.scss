@@ -1,15 +1,15 @@
 @use 'mixins' as mx;
 
 .chat {
-    @include mx.flex(null, flex-end, column);
+    @include mx.flex(null, null, column);
     position: relative;
 
     max-width: 600px;  //**Responsive
-    min-width: 400px; //**Responsive
+    // min-width: 400px; //**Responsive
     width: 100%;     //**Responsive
     height: 100%;
 
-    padding: 5% 15px 12%;    
+    padding: 0 15px 0;    
 
     overflow-y: scroll;  // TODO
         -ms-overflow-style: none;  /* IE and Edge */

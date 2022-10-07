@@ -3,14 +3,12 @@ $font-clr : rgb(24, 24, 24);
 
 
 .insert {
+    overscroll-behavior: contain;
     position: absolute;
     z-index: 999;
-
-    bottom: 10%;
-
-    width: 400px;
+    max-width: 400px;
     height: 65px;
-
+    bottom: 10%;
 
     .notification {
         font-weight: 600;

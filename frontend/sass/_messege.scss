@@ -8,8 +8,12 @@ $clr-info     : #737373;
     margin-bottom: 45px;
     position: relative;
 
+    &:first-child {
+        margin-top : 15%;
+    }
+
     &:last-child {
-        margin-bottom: 0;
+        margin-bottom: 40%;
     }
 
     .messege {
