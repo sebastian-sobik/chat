@@ -1,0 +1,18 @@
+@use './nav';
+@forward './reset';
+
+$background-color : #1F1F1F;
+$font-color : white;
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: $background-color;
+    color: $font-color;
+}
+
+// .absolute {
+//     position: absolute;
+// }

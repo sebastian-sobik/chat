@@ -1,0 +1,30 @@
+@use 'mixins' as mx;
+
+$size : 24px;
+
+
+nav {
+    @include mx.flex(space-between, center);
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    padding: 0 30px;
+    border: 1px solid white;
+    
+    svg {
+        width: $size;
+        height: $size; 
+    }
+}
+
+nav.absolute {
+    position: absolute;
+    top: 50%;
+}
+
+.theme-icon-sun {
+    fill: white;
+}
+
+

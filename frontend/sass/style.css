@@ -1,1 +1,41 @@
-/*# sourceMappingURL=style.css.map */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  padding: 0 30px;
+  border: 1px solid white;
+}
+nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+nav.absolute {
+  position: absolute;
+  top: 50%;
+}
+
+.theme-icon-sun {
+  fill: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #1F1F1F;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
