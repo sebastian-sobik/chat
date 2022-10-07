@@ -3,20 +3,23 @@
 
 
 nav {
+    
     @include mx.flex(space-between, center);
     
-    width: 100%;
-    max-width: 1200px;
+    width: 100%; //**Responsive
     height: 60px;
     
-    padding: 0 30px;
+    padding: 0 70px;
+    position: absolute;
+    z-index: 999;
+    top: 20px;
 
-    .nav-logout {
+    .logout-btn {
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
     }
 
-    .nav-theme-btn {
+    .theme-btn {
         cursor: pointer;
         transition: background-color 100ms linear;
 
@@ -24,11 +27,7 @@ nav {
             background-color: #686868;
         }
     }
-}
 
-nav.absolute {
-    position: absolute;
-    top: 20px;
 }
 
 .theme-icon-sun {

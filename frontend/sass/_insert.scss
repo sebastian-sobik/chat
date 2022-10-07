@@ -1,0 +1,57 @@
+@use 'mixins' as mx;
+$font-clr : rgb(24, 24, 24);
+
+
+.insert {
+    position: absolute;
+    z-index: 999;
+
+    bottom: 10%;
+
+    width: 400px;
+    height: 65px;
+
+
+    .notification {
+        font-weight: 600;
+        position: absolute;
+        top: -25px;
+        left: 5px;
+        color: rgb(111, 202, 164);
+    }
+
+    form {
+        @include mx.flex(null, center);
+        width: 100%;
+        height:100%;
+        border-radius: 1.6em;
+        background-color: white;
+        padding: 10px 20px;
+        box-shadow: 0 0 20px 10px rgb(0, 0, 0, 0.2);
+
+        input[type="text"]{
+            width: 100%;
+            height: 100%;
+            padding-right: 10px;
+
+            color: $font-clr;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+
+        button{
+        border-radius: 100%;
+        transition: background-color 100ms linear;
+
+            &:hover,
+            &:active,
+            &:target,
+            &:focus {
+                background-color: #e7e7e7;
+            }
+        }
+    }
+
+}

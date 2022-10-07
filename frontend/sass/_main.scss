@@ -1,22 +1,35 @@
 @use 'mixins' as mx;
 
 .chat {
-    max-width: 600px;
-    min-width: 400px; //!
-    width: 100%;
+    @include mx.flex(null, flex-end, column);
+    position: relative;
+
+    max-width: 600px;  //**Responsive
+    min-width: 400px; //**Responsive
+    width: 100%;     //**Responsive
     height: 100%;
 
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-     
+    padding: 5% 15px 12%;    
 
-    padding: 65px 15px;    
+    overflow-y: scroll;  // TODO
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+}
 
-    @include mx.flex(null, flex-end);
-    flex-direction: column; //!!!
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+.chat-blur {
+    position: absolute;
+    z-index: 1;
+
+    background: rgba(31, 31, 31, 0.02);
+    backdrop-filter: blur(1.5px);
+    
+    width: 100%;
+    height: 15%;
+
+        &.top {top: 0; height: 6%;}
+        &.bottom { bottom: 0 }
 }

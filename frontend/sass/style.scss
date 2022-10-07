@@ -2,6 +2,7 @@
 @use './messege';
 @use './nav';
 @use './main';
+@use './insert';
 
 $background-color : #1F1F1F;
 $font-color : white;
@@ -17,10 +18,3 @@ body {
     font-family: $font, sans-serif;
 }
 
-.absolute {
-    position: absolute;
-}
-
-.relative {
-    position: relative;
-}
